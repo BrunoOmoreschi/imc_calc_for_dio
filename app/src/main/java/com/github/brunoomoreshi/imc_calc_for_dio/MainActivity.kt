@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     //Funções de  estudo do ciclo de vida das activities
     //Não são necessárias para o projeto e podem ser comentadas
-
+    /*
 
     override fun onStart() {
         super.onStart()
@@ -43,5 +43,7 @@ class MainActivity : AppCompatActivity() {
     override fun onDestroy() {
         Log.w ("Lifecyle", "Destroy = actvity eliminada")
         super.onDestroy()
-    }
+    }*/
+
+
 }

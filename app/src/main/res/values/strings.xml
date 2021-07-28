@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">imc_calc_for_dio</string>
+    <string name="app_name">Calculadora de IMC</string>
+    <string name="tvAppNameDisp_txt">IMC</string>
+    <string name="etPeso_hint">Insira seu peso em kg</string>
+    <string name="etAltura">Insira sua altura em metros</string>
+    <string name="btCalc_txt">Calcular!</string>
 </resources>
