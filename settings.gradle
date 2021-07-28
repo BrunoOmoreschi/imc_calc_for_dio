@@ -1,0 +1,2 @@
+rootProject.name = "imc_calc_for_dio"
+include ':app'
