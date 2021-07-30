@@ -1,14 +1,51 @@
 package com.github.brunoomoreshi.imc_calc_for_dio
 
-import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import android.widget.Toast
+import androidx.core.widget.doOnTextChanged
+import java.lang.Integer.parseInt
+import java.lang.NullPointerException
+import kotlin.reflect.typeOf
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        metodoPrincipal()
+
+        //Ainda sem uso, mas vamos colocar numa outra activity com um infográfico de IMC
+        var tvResult = findViewById<TextView>(R.id.tvResultado)
+    }
+
+
+    fun metodoPrincipal() {
+        val calcBTN = findViewById<Button>(R.id.btCalc)
+
+        //Função de comportamento do botão
+        calcBTN.setOnClickListener {
+            calcIMC()
+        }
+    }
+
+
+    fun calcIMC() {
+        var etPeso : Float? = (findViewById<EditText>(R.id.etPeso).text).toString().toFloat()
+        val etAltura : Float? = (findViewById<EditText>(R.id.etAltura).text).toString().toFloat()
+        var tvIMC = findViewById<TextView>(R.id.tvAppNameDisp)
+        if (etAltura != null && etPeso != null){
+            var imcCalculado = etPeso / (etAltura * etAltura)
+            var convt = imcCalculado.toString()
+            tvIMC.text = "Seu IMC é ${convt}"
+            //Todo está resultando em um numero com muitas casas decimais
+        }
+        else{Log.d("Debug", "Valor do IMC não disponivel")}
+        //Todo Tratar a java.lang.NumberFormatException: Invalid float: "" quando não há valor digitado e é clicado em calcular
+
     }
 
     //Funções de  estudo do ciclo de vida das activities
