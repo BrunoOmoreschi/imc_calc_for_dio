@@ -1,10 +1,10 @@
-![header](D:\Programation\dio\android_inter\imc_calc_for_dio\header.png)
+![header](https://github.com/BrunoOmoreshi/imc_calc_for_dio/blob/main/header.png)
 
 # Boot camp Inter Mobile DIO
 
 App para exercício com a função de calculo de IMC baseado na entrada do usuário.
 
-![appworking](D:\Programation\dio\android_inter\imc_calc_for_dio\appworking.png)
+![appworking](https://github.com/BrunoOmoreshi/imc_calc_for_dio/blob/main/appworking.png)
 
 ## Descrição do app:
 
@@ -12,7 +12,7 @@ Esse app usa o onClickListener para chamar a função de calculo e troca o texto
 
 Também há no código funções de depuração e exemplo do life cycle que mandam para o logCat o status da aplicação. Assim é possível acompanhar se está onCreate, onPause, onResume etc.
 
-![Lifecycle](D:\Programation\dio\android_inter\imc_calc_for_dio\Lifecycle.png)
+![Lifecycle](https://github.com/BrunoOmoreshi/imc_calc_for_dio/blob/main/Lifecycle.png)
 
 Essas funções também são úteis para que possamos monitorar a atividade do usuário. 
 
